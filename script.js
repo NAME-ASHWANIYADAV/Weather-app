@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const apiKey = 'ac7c153f241e5bf8d34e60cbc9f8cf99'; // Replace with your OpenWeatherMap API key
+    const apiKey = 'ac7c153f241e5bf8d34e60cbc9f8cf99'; 
     const getWeatherButton = document.getElementById('get-weather-btn');
     const forecastContainer = document.getElementById('forecast-table');
     const weatherAnimation = document.querySelector('.weather-animation');
@@ -30,9 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 temperature.textContent = `Temperature: ${data.main.temp}°C`;
                 description.textContent = `Description: ${data.weather[0].description}`;
 
-                // Get the weather condition code
+                
                 const weatherIcon = data.weather[0].icon;
-                // Define a mapping of weather condition codes to image filenames
+                
                 const weatherImages = {
                     '01d': 'clear-sky.jpg',
                     '02d': 'few-clouds.jpg',
@@ -43,22 +43,22 @@ document.addEventListener("DOMContentLoaded", () => {
                     '11d': 'thunderstorm.jpg',
                     '13d': 'snow.jpg',
                     '50d': 'mist.jpg',
-                    // Add more conditions as needed
+                    
                 };
-                // Get the image filename based on the weather condition
+               
                 const backgroundImage = weatherImages[weatherIcon] || 'default.jpg';
 
-                // Set the background image
+                
                 weatherAnimation.style.backgroundImage = `url('images/${backgroundImage}')`;
 
-                // Check for rain and display the chance
+                
                 if (data.weather[0].main.toLowerCase() === 'rain') {
                     rainChance.textContent = 'Chance of Rain: ' + (data.rain && data.rain['1h'] ? data.rain['1h'] + 'mm' : 'Unknown');
                 } else {
                     rainChance.textContent = '';
                 }
 
-                // Fetch 15-day forecast
+                
                 return fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`);
             })
             .then(response => response.json())
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     const row = forecastContainer.insertRow();
                     row.insertCell(0).textContent = date;
                     row.insertCell(1).textContent = `${temperature}°C`;
-					row.insertCell(2).textContent = description;
+                    row.insertCell(2).textContent = description;
                 }
             })
             .catch(error => {
@@ -83,3 +83,4 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     });
 });
+

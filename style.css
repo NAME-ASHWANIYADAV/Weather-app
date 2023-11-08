@@ -7,7 +7,7 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: #345b63; /* Fallback background color */
+    background: #345b63; 
 }
 
 .weather-container {
@@ -50,7 +50,7 @@ button {
 }
 
 #forecast-table {
-    width: 100%; /* Make the table 100% wide */
+    width: 100%; 
     border-collapse: collapse;
 }
 
