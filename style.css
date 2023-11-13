@@ -3,11 +3,13 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: #345b63; 
+    background: skyblue; 
+    
 }
 
 .weather-container {
@@ -93,3 +95,18 @@ button {
     color: #007bff;
     font-weight: bold;
 }
+
+#chances-of-rain{
+    margin-top: 400px;
+    font-size: 20px;
+    height: 500px;
+    width: 1600px;
+}
+
+.column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9, .column0 {
+    
+}
+
+
+
+
