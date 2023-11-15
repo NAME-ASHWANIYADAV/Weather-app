@@ -103,10 +103,41 @@ button {
     width: 1600px;
 }
 
-.column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9, .column0 {
-    
+.weather-container-2{
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#weather-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#weather-table th, #weather-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#weather-table th {
+    color: white;
+    background-color: #007bff;
+    font-weight: bold;
+}
+
+#weather-data tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
 
 
 
