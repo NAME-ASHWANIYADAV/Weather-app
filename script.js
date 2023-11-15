@@ -42,9 +42,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     'Snow': 'snow.png',
                     'scattered clouds': 'scattered clouds.png',
                     'overcast clouds': 'overcast clouds.png',
-                    '11d': 'thunderstorm.jpg',
-                    'haze': 'haze.jpg',
-                    '50d': 'mist.jpg',
+                    'light snow': 'light snow.png',
+                    'haze': 'haze.png',
+                    'mist': 'Mist.png',
 
                 };
 
