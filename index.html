@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="weather-container">
+        <h1>Let's See The Weather</h1>
+        <div class="input-container">
+            <input type="text" id="city-input" placeholder="Enter a city">
+            <button id="get-weather-btn">Get Weather</button>
+        </div>
+        <div class="weather-info">
+            <!-- <div class="image"> -->
+            <!-- <img class="img" src="" height="100px" width="100px" /> -->
+            <!-- </div> -->
+            <p id="location"></p>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="rain-chance"></p>
+        </div>
+
+        <div class="forecast-container">
+            <table id="forecast-table">
+                <tr>
+                    <th>Date</th>
+                    <th>Temperature (°C)</th>
+                    <th>Feels Like</th>
+                    <th>Description</th>
+                    <th>Humidity</th>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- <section>
+        <div id="chances-of-rain">
+            <table>
+                <tr>
+                    <div class="column1"><th>City</th></div>
+                    <div class="column2"><th>Humidity </th></div>
+                    <div class="column3"><th>Feels_like</th></div>
+                    <div class="column4"><th>Max. temperature</th></div>
+                    <div class="column5"><th>Min. temperature</th></div>
+                    <div class="column6"><th>Sunrise</th></div>
+                    <div class="column7"><th>Sunset</th></div>
+                    <div class="column8"><th>Temp</th></div>
+                    <div class="column9"><th>Wind_degree</th></div>
+                    <div class="column0"><th>Wind_speed</th></div>
+                </tr>
+                <tr>
+                    <div class="column1"><th>Mumbai</th></div>
+                    <div class="column2"><th>1 </th></div>
+                    <div class="column3"><th>2</th></div>
+                    <div class="column4"><th>4</th></div>
+                    <div class="column5"><th>5</th></div>
+                    <div class="column6"><th>7</th></div>
+                    <div class="column7"><th>4</th></div>
+                    <div class="column8"><th>7</th></div>
+                    <div class="column9"><th>3</th></div>
+                    <div class="column0"><th>8</th></div>
+                </tr>
+                <tr>
+                    <div class="column1"><th>Goa</th></div>
+                    <div class="column2"><th>7</th></div>
+                    <div class="column3"><th>2</th></div>
+                    <div class="column4"><th>5</th></div>
+                    <div class="column5"><th>4</th></div>
+                    <div class="column6"><th>8</th></div>
+                    <div class="column7"><th>7</th></div>
+                    <div class="column8"><th>4</th></div>
+                    <div class="column9"><th>1 </th></div>
+                    <div class="column0"><th>3</th></div>
+                </tr>
+                <tr>
+                    <div class="column1"><th>Himachal</th></div>
+                    <div class="column2"><th>5</th></div>
+                    <div class="column3"><th>5</th></div>
+                    <div class="column4"><th>7</th></div>
+                    <div class="column5"><th>1 </th></div>
+                    <div class="column6"><th>3</th></div> 
+                    <div class="column7"><th>8</th></div>
+                    <div class="column8"><th>4</th></div>
+                    <div class="column9"><th>4</th></div>
+                    <div class="column0"><th>2</th></div>
+                </tr>
+ 
+            </table>
+        </div>
+    </section> -->
+
+
+    <div class="weather-animation"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
